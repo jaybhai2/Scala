@@ -24,7 +24,7 @@ object helloWorld{
 
 sbt run helloWorld.scala
 
-// this is the simpliest way to run scala, if you want jar file to be created you need to follow file sturecture and than do 'sbt run'
+// this is the simpliest way to run scala, if you want jar file to be created you need to follow file sturecture and than do 'sbt run package' to compile
 
 
 
