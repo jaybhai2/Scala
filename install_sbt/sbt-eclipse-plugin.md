@@ -1,4 +1,21 @@
-# Installation and Basic Usage
+## You need below base file structure 
+```
+project
+  -src
+    -main
+      -code.scala
+  -build.sbt
+  -project
+    plugins.sbt
+
+```
+execute
+```
+sbt eclipse
+```
+if you change you build.sbt, just execute above command and refresh eclipse
+
+
 ## Open your plugin definition file (or create one if doesn't exist). You can use either:
 
 the global file (for version 0.13 and up) at ~/.sbt/SBT_VERSION/plugins/plugins.sbt
