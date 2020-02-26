@@ -14,4 +14,4 @@ ________________________________________________________________________________
 
 ### 4) to reload dependencies
 _______________________________________________________________________________________________________________
-![Image2](https://github.com/jayjayjohn/Scala/blob/master/im/sbt_structure3.PNG)
+![Image2](https://github.com/jayjayjohn/Scala/blob/master/im/sbt_structure4.PNG)
