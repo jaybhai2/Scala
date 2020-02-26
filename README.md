@@ -1,5 +1,22 @@
 # Scala
 ## for scala REPL, run sbt console
+with sbt console, sbt will aslo pull all class in the project directory to your REPL session.
+try to create a class in test.scala
+```
+class employee{
+  val name = "jay";
+  val age = 36;
+}
+```
+then run sbt console, 
+```
+scala> val emp = new employee
+emp: employee = employee@3752b4f2
+scala> println(emp.name)
+jay
+scala> println(emp.age)
+36
+```
 
 ### 1)sbt file structure
 _______________________________________________________________________________________________________________
