@@ -17,6 +17,15 @@ jay
 scala> println(emp.age)
 36
 ```
+in you wish to import some library in REPL, such as import org.apache.spark.SparkContext
+
+exit REPL, and start sbt, 
+```
+set libraryDependencies += "org.apache.spark" % "spark-core_2.10" % "2.0.2"  
+show libraryDependencies
+session save
+```
+or just put it in a build.sbt file then console will pull the dependency 
 
 ### 1)sbt file structure
 _______________________________________________________________________________________________________________
