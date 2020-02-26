@@ -1,3 +1,4 @@
+### Set up sbt project for Eclipse IDE
 ## You need below base file structure 
 ```
 project
@@ -7,6 +8,22 @@ project
   -build.sbt
   -project
     plugins.sbt
+
+```
+```
+build.sbt 
+name := "scala100"
+version := "1.0"
+scalaVersion := "2.12.10" // check for latest version
+publishMavenStyle := false
+
+//%% means spark-core_scalaVersion, with single % you have to append _2.xx after spark-core
+//libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.0.2" notTransitive ()
+
+libraryDependencies +=  "org.apache.spark" %% "spark-core" % "2.4.2" notTransitive ()
+
+EclipseKeys.withJavadoc := false
+EclipseKeys.withSource := false
 
 ```
 execute
