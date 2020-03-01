@@ -15,3 +15,5 @@ def rFactorial(n: Int): Int = {
   else
     return n * rFactorial(n - 1)
 }
+
+#### def ehco(s:String*) = s foreach println // * indicate argument can is array of string, to use this, must put array array arguement last
