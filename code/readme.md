@@ -1,5 +1,8 @@
 ## Function
 ```
+def doSomething(func:String => Unit, s:String)  = func(s)
+doSomething( x => println("apply function on "+x), "jahjah")
+
 def iFactorial(n: Int): Int ={
       var i=n;
       var f=1;
