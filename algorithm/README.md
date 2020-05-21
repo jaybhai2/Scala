@@ -52,3 +52,38 @@ def firstDuplicate(a: Array[Int]): Int = {
             return -1
 }
 ```
+### 4) add one to end of Array 
+```
+def add_one(arr:Array[Int]): Array[Int] = {
+
+	var carry = 1
+	
+	var new_arr = new Array[Int](arr.length)
+	
+	var sum = 0
+	
+	for (i <- (arr.length-1 to 0 by -1) ){
+		sum = arr(i) + carry
+		
+		if( sum == 10) 
+			carry = 1
+		else 
+			carry = 0 
+			
+		new_arr(i) = sum % 10
+		
+	}
+	if ( carry == 1) 
+		{
+		new_arr = new Array[Int](arr.length + 1)
+		new_arr(0) = 1
+		}
+	
+	
+		return new_arr
+}
+
+add_one(Array(9,9,9))
+
+
+```
