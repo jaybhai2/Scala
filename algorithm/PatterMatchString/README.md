@@ -1,6 +1,6 @@
-  package test
-  object scalaRun {
-  import util.control.Breaks._
+    package test
+    object scalaRun {
+    import util.control.Breaks._
 
     def main(args: Array[String]): Unit = {
 
@@ -47,4 +47,4 @@
 
       }
     }
-  }
+   }
