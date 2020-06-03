@@ -6,7 +6,9 @@ vi ~/.profile
 
 
 ![Image1](https://github.com/jayjayjohn/spark/blob/master/reference/install_sbt/Capture.PNG)
-
+```
+source ~/.profile
+```
 mkdir sbt_workspace # to store all your sbt project
 
 mkdir sbt_test_project 
@@ -21,9 +23,7 @@ object helloWorld{
           }
 }
 ```
-```
-source ~/.profile
-```
+
 
 sbt run helloWorld.scala
 
