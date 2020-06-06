@@ -3,8 +3,7 @@
       case y :: ys => insert(y, insertionSort(ys))
     }
 
-    val cond: (Int, Int) => Boolean = 
-    (x,y) => x < y
+    val cond: (Int, Int) => Boolean = (x,y) => x < y
 
     def insert(x: Int, xs: List[Int]): List[Int] =
       xs match {
