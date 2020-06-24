@@ -46,3 +46,29 @@ In sbt use the command eclipse to create Eclipse project files
 > eclipse
 
 In Eclipse use the Import Wizard to import Existing Projects into Workspace
+
+```
+STEP 1(Prereq): Install /Setup Software
+Install Scala: http://www.scala-lang.org/download/
+Install SBT: http://www.scala-sbt.org/download.html
+Install Eclipse (/Scala IDE): http://scala-ide.org/download/sdk.html
+Install Spark
+
+STEP 2:
+Create folder structure and add a build.sbt file
+mkdir -p src/{main,test}/{java,resources,scala}
+mkdir lib project target
+touch build.sbt
+touch project/plugins.sbt
+
+Create plugins.sbt in project folder (for sbt eclipse and sbt assembly)
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.3")
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+
+STEP 3:
+Run sbt, sbt eclipse
+
+STEP 4:
+Import project into Workspace
+Add code for Spark
+```
