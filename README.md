@@ -2,29 +2,34 @@
 
 ## Build
 # to clean and build the jar
+```
 mvn clean package
 mvn clean package -Dtest=MyTestClass1
-
+```
 
 
 # to clean, build jar and install jar in local .m2 repo
+```
 mvn clean install
-
+```
 # to source from local repo in pom.xml
+```
 <repositories>
   <repositor>
     <id>mylocal-repo</id>
     <url>file://Users/jwei/.m2/repository/</url>
-
+```
 
 # to to dependency tree (how pom source dependency)
+```
 mvn dependency:tree
+```
 
 # to print out what scope are omitted
-mvn dependency:tree -Dverbose
-
-
 ```
+mvn dependency:tree -Dverbose
+```
+
 
 ## for scala REPL, run sbt console
 with sbt console, sbt will aslo pull all class in the project directory to your REPL session.
